@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<ap_lo &le; 85.5<br/>gini = 0.5<br/>samples = 49000<br/>value = [24531, 24469]<br/>class = 0>] ;
+1 [label=<systolic_bp_140_160 &le; 0.5<br/>gini = 0.473<br/>samples = 34563<br/>value = [21269, 13294]<br/>class = 0>] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<cholesterol_3 &le; 0.5<br/>gini = 0.456<br/>samples = 32111<br/>value = [20796, 11315]<br/>class = 0>] ;
+1 -> 2 ;
+3 [label=<gini = 0.436<br/>samples = 29477<br/>value = [20007, 9470]<br/>class = 0>] ;
+2 -> 3 ;
+4 [label=<gini = 0.42<br/>samples = 2634<br/>value = [789, 1845]<br/>class = 1>] ;
+2 -> 4 ;
+5 [label=<height &le; 147.5<br/>gini = 0.311<br/>samples = 2452<br/>value = [473, 1979]<br/>class = 1>] ;
+1 -> 5 ;
+6 [label=<gini = 0.49<br/>samples = 49<br/>value = [21, 28]<br/>class = 1>] ;
+5 -> 6 ;
+7 [label=<gini = 0.305<br/>samples = 2403<br/>value = [452, 1951]<br/>class = 1>] ;
+5 -> 7 ;
+8 [label=<systolic_bp_120_140 &le; 0.5<br/>gini = 0.35<br/>samples = 14437<br/>value = [3262, 11175]<br/>class = 1>] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<systolic_bp_160_180 &le; 0.5<br/>gini = 0.279<br/>samples = 10992<br/>value = [1840, 9152]<br/>class = 1>] ;
+8 -> 9 ;
+10 [label=<gini = 0.292<br/>samples = 8657<br/>value = [1539, 7118]<br/>class = 1>] ;
+9 -> 10 ;
+11 [label=<gini = 0.225<br/>samples = 2335<br/>value = [301, 2034]<br/>class = 1>] ;
+9 -> 11 ;
+12 [label=<cholesterol_3 &le; 0.5<br/>gini = 0.485<br/>samples = 3445<br/>value = [1422, 2023]<br/>class = 1>] ;
+8 -> 12 ;
+13 [label=<gini = 0.496<br/>samples = 2861<br/>value = [1296, 1565]<br/>class = 1>] ;
+12 -> 13 ;
+14 [label=<gini = 0.338<br/>samples = 584<br/>value = [126, 458]<br/>class = 1>] ;
+12 -> 14 ;
+}
